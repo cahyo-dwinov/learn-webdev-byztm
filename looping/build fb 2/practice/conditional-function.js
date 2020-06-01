@@ -25,12 +25,11 @@ var passWordPrompt = prompt ("What's your password ?");
 
 function signIn(user, pass) {
     if(user === database[0].username && pass === database[0].password) {
-        alert(newsFeed);
+        console.log(newsFeed);
     } else {
         alert("Maaf Anda belum terdaftar");
-
     }
 }
 
-signIn();
+signIn(userNamePrompt, passWordPrompt);
 
